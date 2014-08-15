@@ -1,0 +1,73 @@
+﻿html, body {
+	font: 13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+
+body {
+    clear: both;
+    padding-bottom: 35px;
+	background-color: #598EDE;
+}
+
+header h1 a {
+	color: black;
+	text-decoration: none;
+}
+
+.unread {
+	color:red;
+}
+
+#greeting {
+	/*display: none;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 250px;
+	border: none;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px 0 5px 0;
+	background-color: #C3C3C3;
+	z-index:10;
+}
+
+#greeting span{
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+#invitation {
+}
+
+#menuArrow {
+	cursor:pointer;
+	display:none;
+}
+.visible {
+	display:block !important;
+}
+
+#myGames {
+	clear: left;
+	margin: 10px 0 0 20px;
+	display:none;
+}
+
+#myGames span{
+	float: none;
+	margin: 0 0 0 0;
+}
+
+#myGames ul {
+	margin: 6px 3px 3px 3px;
+	padding: 0 0 7px 10px;
+	font-size: 12px;
+}
+
+#myGames ul li {
+	list-style-type: none;
+}
+
+.content-wrapper {
+	
+}

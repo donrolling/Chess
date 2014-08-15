@@ -1,0 +1,33 @@
+﻿@model Contracts.Model.User
+
+@using Contracts.Model;
+@using Service.Membership;
+
+@if (Model != null && Model.Id > 0) {
+	<div id="greeting">
+		<div id="actions">
+			<span id="invitation">Start a <a href="~/Games/NewGame">new game</a></span>
+			<span><a id="logoff" href="~/Account/LogOff">log off</a></span>
+			<span id="menuArrow" class="visible">&nbsp;&nbsp;&#9660;&nbsp;&nbsp;</span>
+			<br clear="both" />
+		</div>
+		<section id="myGames">
+			<strong>@Model.DisplayName</strong><br />
+			@{Html.RenderAction("Games", "Games");}
+			<hr />
+			@{Html.RenderAction("PendingGames", "Games");}
+		</section>
+	</div>
+	<script>
+		$('#menuArrow').addClass('visible');
+		$('#menuArrow').live('click', function () {
+			$('#myGames').addClass('visible');
+			$('#menuArrow').removeClass('visible');
+		});
+		$('#greeting').on('mouseleave', function () {
+			$('#myGames').removeClass('visible');
+			$('#menuArrow').addClass('visible');
+		});
+	</script>
+	@*<h2 id="welcome">Welcome @Model.DisplayName!</h2>*@
+}

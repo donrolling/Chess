@@ -1,0 +1,9 @@
+﻿@model IEnumerable<SelectListItem>
+@if(Model.Any()){
+	<span>Active Games:</span>
+	<ul>
+		@foreach(var game in Model){
+			<li><a href="~/Games/Game/@game.Value">@game.Text</a></li>
+		}
+	</ul>	
+}

@@ -1,0 +1,39 @@
+﻿@model Contracts.ViewModels.GameModel
+
+@{
+    ViewBag.Title = "New Game";
+}
+
+<h2>New Game</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+	@Html.HiddenFor(model => model.Player1Id)
+	
+    <div class="editor-label">
+        <label>Choose color:</label>
+    </div>
+    <div class="editor-field">
+		@Html.DropDownListFor(model => model.Player1Color, new List<SelectListItem>{ 
+																	new SelectListItem{ Text = "White", Value = "White", Selected = true }, 
+																	new SelectListItem{ Text = "Black", Value = "Black", Selected = false } 
+																	}
+																)
+    </div>
+
+    <div class="editor-label">
+        <label>Choose Opponent:</label>
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(model => model.Player2Id, Model.PotentialOpponents)
+    </div>
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

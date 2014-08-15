@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chess", "Chess\Chess.csproj", "{E4ADD6B8-B7EE-450C-8EC8-169F0CAE9D9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82B2A59A-B9EF-4D17-9BCD-64CFD07131F4}"
+	ProjectSection(SolutionItems) = preProject
+		ChessSharp.vsmdi = ChessSharp.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessEngineTests", "UnitTests\ChessEngineTests.csproj", "{323F8A4F-76AC-4E06-A79B-B8D38945ABE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite", "WebSite\WebSite.csproj", "{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F16FD36D-722A-4648-ABB2-A681407FD835}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{51C8E02C-FBA4-456E-92E9-6FF1579EE968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSiteTests", "WebSiteTests\WebSiteTests.csproj", "{1710CE48-258A-41AA-A39E-9D8EE9740F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{F8603221-F0F2-4693-8AD9-DD84D7B3095E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{8B40C86B-2C8A-4263-98FD-6BFD02E74A16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site", "Site", "{ADE90D1F-7CBB-4915-889C-AFAF8E9AFC95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{01D2696B-A130-4226-8981-1BD444840520}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F9767608-168F-425E-86EE-D06779B57984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4ADD6B8-B7EE-450C-8EC8-169F0CAE9D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4ADD6B8-B7EE-450C-8EC8-169F0CAE9D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4ADD6B8-B7EE-450C-8EC8-169F0CAE9D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4ADD6B8-B7EE-450C-8EC8-169F0CAE9D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323F8A4F-76AC-4E06-A79B-B8D38945ABE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323F8A4F-76AC-4E06-A79B-B8D38945ABE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323F8A4F-76AC-4E06-A79B-B8D38945ABE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323F8A4F-76AC-4E06-A79B-B8D38945ABE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C8E02C-FBA4-456E-92E9-6FF1579EE968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C8E02C-FBA4-456E-92E9-6FF1579EE968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C8E02C-FBA4-456E-92E9-6FF1579EE968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C8E02C-FBA4-456E-92E9-6FF1579EE968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1710CE48-258A-41AA-A39E-9D8EE9740F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1710CE48-258A-41AA-A39E-9D8EE9740F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1710CE48-258A-41AA-A39E-9D8EE9740F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1710CE48-258A-41AA-A39E-9D8EE9740F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8603221-F0F2-4693-8AD9-DD84D7B3095E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8603221-F0F2-4693-8AD9-DD84D7B3095E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8603221-F0F2-4693-8AD9-DD84D7B3095E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8603221-F0F2-4693-8AD9-DD84D7B3095E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B40C86B-2C8A-4263-98FD-6BFD02E74A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B40C86B-2C8A-4263-98FD-6BFD02E74A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B40C86B-2C8A-4263-98FD-6BFD02E74A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B40C86B-2C8A-4263-98FD-6BFD02E74A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D2696B-A130-4226-8981-1BD444840520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D2696B-A130-4226-8981-1BD444840520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D2696B-A130-4226-8981-1BD444840520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D2696B-A130-4226-8981-1BD444840520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D2696B-A130-4226-8981-1BD444840520}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F16FD36D-722A-4648-ABB2-A681407FD835} = {82B2A59A-B9EF-4D17-9BCD-64CFD07131F4}
+		{51C8E02C-FBA4-456E-92E9-6FF1579EE968} = {F9767608-168F-425E-86EE-D06779B57984}
+		{1710CE48-258A-41AA-A39E-9D8EE9740F94} = {F9767608-168F-425E-86EE-D06779B57984}
+		{323F8A4F-76AC-4E06-A79B-B8D38945ABE7} = {F9767608-168F-425E-86EE-D06779B57984}
+		{F8603221-F0F2-4693-8AD9-DD84D7B3095E} = {ADE90D1F-7CBB-4915-889C-AFAF8E9AFC95}
+		{8B40C86B-2C8A-4263-98FD-6BFD02E74A16} = {ADE90D1F-7CBB-4915-889C-AFAF8E9AFC95}
+		{5850F4F5-90DB-472D-95DB-C8C5E3AC08F6} = {ADE90D1F-7CBB-4915-889C-AFAF8E9AFC95}
+		{73E0C7B1-4FA3-4FC3-AF8D-80630DE744BC} = {ADE90D1F-7CBB-4915-889C-AFAF8E9AFC95}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ChessSharp.vsmdi
+	EndGlobalSection
+EndGlobal

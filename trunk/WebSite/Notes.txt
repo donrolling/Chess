@@ -1,0 +1,22 @@
+﻿Todo:
+Use SignalR to update the board when the other player is done moving.
+Make sure game displays properly when game is over
+Allow resigning, allow draw.
+Create game - make this better, does that mean users have friends
+Make two modes available: email time or real time, will need a Notification system 
+
+Notes:
+Star (*) is to denote an ongoing game
+# denotes checkmate, necessary for proper pgn notation
+
+Code Features:
+For better code in the future when you might have AI, change the pawn stuff so that we have the concept of moves and attacks and that these things are seperate. This would probably apply to things like castling as well.
+
+Test Data:
+2014	r2qkbnr/2pppppp/b7/pp1N4/1P1n4/P7/1BP1PPPP/R2QKBNR b KQkq - 1 6	1. a3 a5 2. b4 b5 3. Nc3 Ba6 4. Bb2 Nc6 5. d4 Nd4 6. Nd5 
+2015	r1bq1rk1/ppp2ppp/8/3P4/1Q2P3/6P1/PPP2P1P/R1B1KB1R b KQ - 0 10	1. Nf3 Nc6 2. Nc3 Nf6 3. d4 d5 4. e4 e5 5. Nd5 Nd5 6. d5 Nd4 7. Nxd4 exd4 8. Qxd4 Bb4 9. Qxb4 O-O 10. g3 
+3013	4r3/N2R4/2R1BPp1/2k4p/8/2P3P1/PP3P1P/6K1 b - - 1 31	1. e4 e5 2. d4 d4 3. Qd4 Bb4 4. c3 Bd6 5. e5 Be7 6. Nf3 Nc6 7. Qg4 g6 8. Bg5 Bg5 9. Ng5 Qg5 10. Qg5 Nce7 11. Qe7 Ke7 12. Bc4 Nf6 13. f6 Kd8 14. Bxf7 d5 15. O-O Rg8 16. Rd1 c5 17. Rxd5 Bd7 18. Bxg8 Kc7 19. Na3 b5 20. Rxc5 Kb6 21. Rd5 Be6 22. Bxe6 Rf8 23. Nxb5 Kc6 24. Nxa7 Kc7 25. Nb5 Kb8 26. Rad1 Kb7 27. Rd7 Kb6 28. Na7 Re8 29. R0d6 Kc5 30. g3 h5 31. Rc6 
+9017	1Q1r3r/3n1p2/2BQpk2/3p4/3PP1pp/p1P2N2/P5PP/R1BK3R b - - 0 32	1. e4 e6 2. Ke2 d5 3. Ke3 a5 4. Kd4 Nc6 5. Kd3 Nd4 6. Kxd4 b6 7. Bd3 Qf6 8. e5 Qf4 9. Kc3 Qxe5 10. Kb3 Ba6 11. Qe2 Qd4 12. c3 Qc5 13. Kc2 b5 14. Na3 b4 15. Bxa6 bxa3 16. b3 Qe7 17. Bb7 Rd8 18. d4 Qf6 19. Qb5 Ke7 20. Qxa5 Qf5 21. Kd1 Qg4 22. f3 Nf6 23. Qxc7 Nd7 24. Bc6 Qe4 25. fxe4 Kf6 26. Nf3 Bd6 27. Qxd6 g6 28. b4 h5 29. b5 h4 30. b6 g5 31. b7 g4 32. b8=q 
+9017	2r4r/5N2/2n1pQ2/3p3k/3PP1p1/p1P3Pp/P6P/R1BK1R2 b - - 0 38	1.   e4 e6 2.   Ke2 d5 3.   Ke3 a5 4.   Kd4 Nc6 5.   Kd3 Nd4 6.   Kxd4 b6 7.   Bd3 Qf6 8.   e5 Qf4 9.   Kc3 Qxe5 10. Kb3 Ba6 11. Qe2 Qd4 12. c3 Qc5 13. Kc2 b5 14. Na3 b4 15. Bxa6 bxa3 16. b3 Qe7 17. Bb7 Rd8 18. d4 Qf6 19. Qb5 Ke7 20. Qxa5 Qf5 21. Kd1 Qg4 22. f3 Nf6 23. Qxc7 Nd7 24. Bc6 Qe4 25. fxe4 Kf6 26. Nf3 Bd6 27. Qxd6 g6 28. b4 h5 29. b5 h4 30. b6 g5 31. b7 g4 32. b8=q Nxb8 33. Qe5 Kg6 34. Ng5 h3 35. g3 Rc8 36. Rf1 Nxc6 37. Qf6 Kh5 38. Nxf7
+
+

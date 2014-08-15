@@ -1,0 +1,51 @@
+﻿#statusBar {
+	display:none;
+	z-index:1;
+	position:relative;
+	width:400px;
+}
+
+#canvas {
+	width:400px;
+	height:400px;
+}
+
+#MoveIndicator {
+	background-color:#ccc;
+	border:black solid 1px;
+	padding:8px 5px;
+}
+#FEN {
+	background-color:#ccc;
+	border:black solid 1px;
+	border-bottom:none;
+	margin:0;
+	padding:8px 5px;
+}
+#FEN span{
+	padding:3px 2px;
+	display:block;
+	font-size:small;
+}
+#PGN {
+	background-color:#ccc;
+	border:black solid 1px;
+}
+#PGN span{
+	padding:8px 5px;
+	display:block;
+	font-size:x-small;
+}
+
+.chessMove {
+	float:left;
+	width:70px;
+}
+.moveNumber {
+	display:inline !important;
+	width:25px;
+}
+.moveText {
+	display:inline !important;
+	width:45px;
+}

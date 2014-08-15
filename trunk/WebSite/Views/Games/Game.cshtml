@@ -1,0 +1,27 @@
+﻿@model Contracts.ViewModels.GameModel
+@section head{
+	<link rel="stylesheet" href="~/Content/jquery.fancybox.css" />
+	<link rel="stylesheet" href="~/Content/Chessboard/css/chessboard-0.1.0.css" />
+}
+@section scripts{
+	<script type="text/javascript" src="~/Scripts/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="~/Scripts/jquery.signalR-1.0.0.min.js"></script>
+    <script type="text/javascript" src="~/signalr/hubs"></script>
+	<script type="text/javascript" src="~/Content/Chessboard/js/chessboard-0.1.0.js"></script>
+	<script type="text/javascript" src="~/Scripts/TalariusChess.js"></script>
+
+	<script type="text/javascript">
+		var talariusChess;
+		$(document).ready(function () {
+			talariusChess = new TalariusChess.Game('canvas', 'scoreBoard', @Model.Id.ToString(), '@Model.CurrentUserPlayerColor', '@Model.EncryptedUserId', '@Model.ChessBoardViewModel.FEN', '@Model.ChessBoardViewModel.Matrix');
+        });
+	</script>
+}
+<div class="content-wrapper">
+	<div id="canvas"></div>
+	<div id="statusBar">
+		<div id="MoveIndicator"></div>
+		<div id="FEN"></div>
+		<div id="PGN"></div>
+	</div>
+</div>

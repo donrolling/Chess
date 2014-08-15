@@ -1,0 +1,9 @@
+﻿@using Contracts.Model;
+@using Service.Membership;
+
+@{ User user = UserTracker.Current(this.Context); }
+@if (user == null || user.Id == 0) {
+	Html.RenderPartial("UserAuthorizeInvite");
+}else{
+	Html.RenderPartial("UserGreeting", user);
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<SelectListItem>
+@if(Model.Any()){
+	<span>Pending Games:</span>
+	<ul>
+		@foreach(var game in Model){
+			if (string.IsNullOrEmpty(game.Value)) {
+				<li>@game.Text</li>
+			}else{
+				var value = game.Value.Split(';');
+				var userGameDataId = value[0];
+				var opponentUserId = value[1];
+				if (opponentUserId == "0") {
+					<li><a href="~/Games/CancelChallenge/@userGameDataId">Cancel game: @game.Text</a></li>
+				}else{
+					<li><a href="~/Games/AcceptChallenge/@userGameDataId/@opponentUserId">Accept game: @game.Text</a></li>
+				}
+			}
+		}
+	</ul>	
+}

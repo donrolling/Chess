@@ -1,0 +1,8 @@
+BR  --  BB  BQ  BK  --  --  BR  
+BP  BP  BP  BP  --  BP  BP  BP  
+--  --  --  --  BP  --  --  --  
+--  --  BB  --  --  --  --  --  
+--  WP  --  --  WP  --  --  --  
+WP  --  WN  WP  --  WP  WP  --  
+--  --  BN  WP  --  --  --  WP  
+WR  --  WB  --  WK  WB  WN  WR  
